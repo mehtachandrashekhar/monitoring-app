@@ -21,7 +21,7 @@ jobs:
 
         - name: Build and Push Docker Image
           run: |
-            docker build -t ${{ secrets.DOCKER.USERNAME}}/my-monitiring-app:latest .
+            docker build -t ${{ secrets.DOCKER.USERNAME}}/my-monitoring-app:latest .
             docker push ${{ secrets.DOCKER.USERNAME}}/my-monitoring-app
 
         - name: Deploy Docker Container
